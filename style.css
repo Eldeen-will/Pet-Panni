@@ -1,0 +1,19 @@
+.activeM{
+    background: red;
+    color: #fff;
+}
+
+.activeA{
+    position: absolute;
+    z-index: 2;
+}
+
+.sec{
+    position: relative;
+}
+
+article{
+    position: absolute;
+    z-index: 1;
+    background: red;
+}
