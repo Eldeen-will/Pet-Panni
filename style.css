@@ -253,6 +253,10 @@ input{
     padding: 15px 0 10px 20px;
 }
 
+input:focus{
+    outline: none;
+}
+
 .name{
     margin-top: 48px;
     width: 41%;
