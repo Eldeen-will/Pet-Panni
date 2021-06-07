@@ -57,7 +57,6 @@ main.addEventListener('click', function(e) {
             traveM.className = 'activeM';
             traveA.className = 'activeA';
         break;
-
        };
        
 });

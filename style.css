@@ -69,7 +69,6 @@ body{
 
 #us{
     text-align: flex-start;
-    display: inline-block;
     width: 42%;
     margin-left: 72px;
 }
@@ -94,7 +93,6 @@ body{
 
 .img{
     margin: 0;
-    display: inline-block;
     width: 49.3%;
 }
 
