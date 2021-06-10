@@ -176,9 +176,6 @@ li{
     color: #fff;
     cursor: pointer;
     display: none;
-}
-
-#mobile{
     position: absolute;
     top: 10px;
     right: 20px;
@@ -464,9 +461,9 @@ footer p{
         top: 25px;
         width: 100%;
         background: #fff;
-        transition: all .5s;
+        transition: all 0.5s;
         display: block;
-        left: -100%;
+        top: -100%;
     }
 
     #menu button{
@@ -477,7 +474,6 @@ footer p{
         background: #fff;
         color: #D76F00;
         width: 100%;
-        transition: all .5s;
     }
 
     nav #menu li{
@@ -488,8 +484,141 @@ footer p{
         margin-right: 0;
     }
 
-    #check:checked ~ ul{
-        left: 0;
+    #menu.menuMobile{
+        top: 0;
+        transition: all 0.5s;
+        margin-top: 45px;
+    }
+
+    #mobile{
+        position: fixed;
+        background: #D76F00;
+        top: 0;
+        width: 100%;
+        height: 45.3px;
+        z-index: 1;
+    }
+
+    .sec2{
+        position: unset;
+    }
+
+    #contact{
+        position: unset;
+    }
+
+    .active{
+        display: block;
+        position: fixed;
+        z-index: 2;
+        top: -8px;
+        left: 20px;
+    }
+
+    .sec1{
+        flex-flow: column;
+    }
+
+    #us{
+        width: 90%;
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .img img{
+        margin-bottom: 10px;
+    }
+
+    .para2 p:last-child{
+        margin-top: 5px;
+    }
+
+    .para2 p{
+        margin-bottom: 5px;
+    }
+
+    .name, .sub, .email{
+        width: 100%;
+    }
+
+    .email{
+        margin-top: 15px;
+    }
+
+}
+
+@media (max-width: 425px){
+
+    .img img{
+        display: none;
+    }
+
+    #us h2{
+        font-size: 2em;
+    }
+
+    #us p{
+        font-size: 1em;
+        margin-bottom: 25px;
+    }
+
+    .sec2 h1{
+        font-size: 2em;
+    }
+
+    .line1{
+        width: 70%;
+    }
+
+    .title2{
+        flex-flow: column-reverse;
+    }
+
+    .title2 h2{
+        padding: 0;
+        margin: 10px auto;
+        font-size: 1.8em;
+    }
+
+    .line2{
+        margin: 40px auto;
+        margin-bottom: 5px;
+    }
+
+    .imgW{
+        flex-flow: column;
+    }
+
+    #ho .imgW img{
+        margin: 10px auto;
+        width: 70%;
+    }
+
+    .msg p{
+        font-size: 0.9em;
+        margin-bottom: 0;
+    }
+
+    .msg h3{
+        font-size: 1.6em;
+        margin-top: 0;
+    }
+
+    #mail{
+        width: 97%;
+    }
+
+    #mail input, #mail textarea{
+        font-size: 1em;
+    }
+
+    #mail button{
+        font-size: 1.1em;
+        padding: 15px 40px;
+    }
+
+    #copy{
+        font-size: 0.7em;
     }
 
 }

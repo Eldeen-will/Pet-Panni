@@ -61,3 +61,12 @@ menu.addEventListener('click', function(e) {
        
 });
 
+let check = document.getElementById("check")
+
+check.addEventListener('click', function() {
+if (menu.classList.contains("menuMobile")) {
+menu.classList.remove("menuMobile");
+} else {
+menu.classList.add("menuMobile");
+};
+});
