@@ -621,4 +621,7 @@ footer p{
         font-size: 0.7em;
     }
 
+    input:-webkit-autofill:hover, input:-webkit-autofill{
+        -webkit-text-fill-color: #616161;
+    }
 }
