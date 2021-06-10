@@ -47,6 +47,7 @@
 body{
     background: #252525;
     font-family: Roboto;
+    margin: 0;
 }
 
 #wrapper{
@@ -54,6 +55,20 @@ body{
     width: auto;
     margin: 0 auto;
     background: #fff;
+}
+
+
+        /* Header */
+
+
+
+#banner img{
+    width: 100%;
+}
+
+#site a{
+    border-radius: 40px;
+    cursor: pointer;
 }
 
 
@@ -65,6 +80,7 @@ body{
     align-items: center;
     background: #FFF7EE;
     margin-top: -4px;
+    width: 100%;
 }
 
 #us{
@@ -75,7 +91,7 @@ body{
 
 #us p{
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.1em;
     line-height: 21px;
     color: #302F2F;
 }
@@ -86,7 +102,7 @@ body{
 
 #us h2{
     font-weight: 700;
-    font-size: 48px;
+    font-size: 3em;
     line-height: 56px; 
     color: #CF6C01;
 }
@@ -96,20 +112,55 @@ body{
     width: 49.3%;
 }
 
+.img img{
+    width: 100%;
+}
+
 
         /* Menu */
 
-#main button{
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.active{
+    display: none;
+}
+
+#logo img{
+    width: 50px;
+    height: auto;
+}
+
+#menu{
+    display: flex;
+    justify-content: center;
+    padding-inline-start: 0;
+}
+
+#menu button{
     font-weight: 900;
-    font-size: 18px;
+    font-size: 1em;
     line-height: 16px;
     color: #CF6C01;
     border: none;
     background: none;
     cursor: pointer;
+    padding: 7px 8px 7px 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
 }
 
-#main button:not(:last-child){
+#menu button:hover{
+    background: #CF6C01;
+    color: #fff;
+    border-radius: 15px;
+    transition: .3s;
+}
+
+#menu li:not(:last-child){
     margin-right: 30px;
 }
 
@@ -118,6 +169,23 @@ li{
     justify-content: center;
     list-style: none;
     margin-top: 57px;
+}
+
+.botao i{
+    font-size: 1.5em;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+#mobile{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+#check{
+    display: none;
 }
 
 
@@ -132,7 +200,7 @@ li{
 .title1 h1{
     margin: 54px 0 15px 0;
     font-weight: 700;
-    font-size: 38px;
+    font-size: 2.4em;
     line-height: 44px;
     color: #CF6C01;
     text-transform: uppercase;
@@ -152,7 +220,7 @@ li{
 
 .title2 h2{
     font-weight: 700;
-    font-size: 36px;
+    font-size: 2.2em;
     line-height: 43px;
     color: #CF6C01;
     text-transform: uppercase;
@@ -194,6 +262,10 @@ li{
 
 .imgW img:not(:last-child){
     margin-right: 44px;
+}
+
+.imgW img{
+    width: 25.8%;
 }
 
 
@@ -242,7 +314,7 @@ li{
 
 input{
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.1em;
     line-height: 23px;
     color: #616161;
     border-radius: 10px;
@@ -272,9 +344,17 @@ input:focus{
 }
 
 .text{
-    margin: 0;
-    padding: 20px 25px;
-    
+    border: none; 
+    width: 900px;
+    height: 140px;
+    outline: none;
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #616161;
+    padding: 12px 0 0 8px;
+    border-radius: 10px;
+    resize: none;
+    font-family: Roboto;
 }
 
 #text{
@@ -289,7 +369,7 @@ input:focus{
 
 #send{
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.2em;
     line-height: 23px;
     text-transform: uppercase;
     color: #fff;
@@ -298,6 +378,7 @@ input:focus{
     border-radius: 25px;
     border: none;
     margin: 33px 0 52px 0;
+    cursor: pointer;
 }
 
 footer{
@@ -309,7 +390,7 @@ footer{
 
 footer p{
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.2em;
     line-height: 23px;
     color: #fff;
     text-align: center;
@@ -322,20 +403,93 @@ footer p{
 
 #midia{
     margin-top: 70px;
+    display: flex;
 }
 
 #face{
     background: #fff;
+    padding: 7px 9px 0 9px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 4.2px;
+}
+
+.face{
     color: #D76F00;
-    padding:7px 8px 0 7px;
-    border-radius: 40%;
-    margin-left: 20px;
+    text-decoration: none;
 }
 
 #insta{
+    margin-right: 25px;
     color: #fff;
 }
 
 #contact{
     background: #D76F00;
+}
+
+
+@media (max-width: 1024px){
+
+    #us{
+        margin-left: 20px;
+        width: 47%;
+    }
+
+    #us h2{
+        margin-top: 6px;
+        margin-bottom: 12px;
+    }
+
+    .sec2 h2{
+        margin-left: 1.31em;
+    }
+
+    .sec2 #line1, .sec2 #line2, .sec2 #line3, .sec2 #line4, .sec2 #line5{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 858px){
+
+    .botao i{
+        display: block;
+    }
+
+    #menu{
+        position: fixed;
+        top: 25px;
+        width: 100%;
+        background: #fff;
+        transition: all .5s;
+        display: block;
+        left: -100%;
+    }
+
+    #menu button{
+        padding: 20px 0;
+    }
+
+    #menu button:hover{
+        background: #fff;
+        color: #D76F00;
+        width: 100%;
+        transition: all .5s;
+    }
+
+    nav #menu li{
+        margin: 0;
+    }
+
+    nav #menu li:not(:last-child){
+        margin-right: 0;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+
 }

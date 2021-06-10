@@ -1,4 +1,4 @@
-let main = document.getElementById('main');
+let menu = document.getElementById('menu');
 
 let homeM = document.getElementById('home');
 let edreM = document.getElementById('edre');
@@ -15,7 +15,7 @@ let mantaA = document.getElementById('ma');
 let traveA = document.getElementById('tr')
 
 
-main.addEventListener('click', function(e) {
+menu.addEventListener('click', function(e) {
     let escolha = e.target.id;
     let choices1 = [homeM, edreM, tapeM, bandaM, mantaM, traveM];
     let choices2 = [homeA, edreA, tapeA, bandaA, mantaA, traveA];
@@ -60,3 +60,4 @@ main.addEventListener('click', function(e) {
        };
        
 });
+
