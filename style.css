@@ -1,48 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
 
-/*.activeM{
-    background: red;
+        /* Menu Change */
+
+#menu .activeM{
+    background: #CF6C01;
     color: #fff;
+    border-radius: 15px;
 }
 
 .sec2 .activeA{
-    position: absolute;
-    background: red;
-    z-index: 2;
-}
-
-.sec2{
-    position: relative;
-}
-
-.sec2 article{
-    position: absolute;
-    z-index: 1;
-    background: blue;
-}*/
-
-/* provisório */
-
-.sec2{
     background: #fff;
-    position: relative;
-    margin-bottom: 70px;
+    display: block;
 }
 
-#ed, #ta, #ba, #ma, #tr{
-    position: absolute;
-    z-index: 0;
-    opacity: 0;
+.sec2 .disable{
+    display: none;
 }
 
-#contact{
-    position: relative;
-    z-index: 1;
-}
-
-
-/*   ==   */
+        /* Body */
 
 body{
     background: #252525;
@@ -188,6 +164,10 @@ li{
 
         /* Nossas confecções */
 
+.sec2{
+    margin-bottom: 44px;
+}
+
 .title1{
     display: flex;
     align-items: center;
@@ -265,8 +245,31 @@ li{
     width: 25.8%;
 }
 
+#edredom, #tapete, #bandana, #manta, #travesseiro{
+    flex-flow: column-reverse;
+}
+
+#change1{
+    margin-top: 70px;
+    margin-bottom: 35px;
+    flex-flow: column-reverse;
+}
+
+#change1 h2{
+    padding: 0;
+    margin: 0 auto;
+}
+
+#change2{
+    margin-top: 5px;
+    width: 10%;
+}
 
         /* Footer */
+
+input:-webkit-autofill:hover, input:-webkit-autofill{
+-webkit-text-fill-color: #616161;
+}
 
 #contact{
     display: flex;
@@ -448,6 +451,10 @@ footer p{
         width: 100%;
     }
 
+    .line1{
+        width: 35%;
+    }
+
 }
 
 @media (max-width: 858px){
@@ -499,8 +506,16 @@ footer p{
         z-index: 1;
     }
 
+    #menu button{
+        font-weight: 700;
+    }
+
     .sec2{
         position: unset;
+    }
+
+    .sec2 h1{
+        margin-bottom: 5px;
     }
 
     #contact{
@@ -545,6 +560,15 @@ footer p{
         margin-top: 15px;
     }
 
+    .line1{
+        height: 7px;
+        width: 40%;
+    }
+
+    #banner img{
+        margin-top: 45px;
+    }
+
 }
 
 @media (max-width: 425px){
@@ -564,6 +588,7 @@ footer p{
 
     .sec2 h1{
         font-size: 2em;
+        margin-bottom: 0;
     }
 
     .line1{
@@ -591,7 +616,7 @@ footer p{
 
     #ho .imgW img{
         margin: 10px auto;
-        width: 70%;
+        width: 80%;
     }
 
     .msg p{
@@ -612,7 +637,7 @@ footer p{
         font-size: 1em;
     }
 
-    #mail button{
+    #send{
         font-size: 1.1em;
         padding: 15px 40px;
     }
@@ -621,7 +646,57 @@ footer p{
         font-size: 0.7em;
     }
 
-    input:-webkit-autofill:hover, input:-webkit-autofill{
-        -webkit-text-fill-color: #616161;
+}
+
+@media (max-width: 375px){
+
+    .line1{
+        width: 65%;
+    }
+
+    #us h2{
+        font-size: 1.9em;
+    }
+
+    #us p{
+        font-size: 0.8em;
+    }
+
+    .sec2 h1{
+        font-size: 1.7em;
+    }
+
+    .title2 h2{
+        font-size: 1.5em;
+    }
+
+    #ho .imgW img{
+        width: 90%;
+    }
+
+    .msg p{
+        font-size: 0.8em;
+    }
+
+    .msg h3{
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        font-size: 1.3em;
+        line-height: 1.1em;
+    }
+
+    #send{
+        font-size: 0.9em;
+        padding: 10px 30px;
+    }
+
+    #copy p{
+        width: 60%;
+        margin: 40px auto 20px auto;
+    }
+
+    #copy{
+        margin: 0 auto;
     }
 }

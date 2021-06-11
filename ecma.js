@@ -24,8 +24,10 @@ menu.addEventListener('click', function(e) {
         let reset1 = choices1[i];
         let reset2 = choices2[i];
         reset2.classList.remove('activeA');
+        reset2.classList.add('disable');
         reset1.classList.remove('activeM');
     };
+
        switch(escolha){
 
         case 'home':
@@ -64,9 +66,11 @@ menu.addEventListener('click', function(e) {
 let check = document.getElementById("check")
 
 check.addEventListener('click', function() {
-if (menu.classList.contains("menuMobile")) {
-menu.classList.remove("menuMobile");
-} else {
-menu.classList.add("menuMobile");
-};
-});
+    if (menu.classList.contains("menuMobile")){
+    menu.classList.remove("menuMobile");
+    }else{
+    menu.classList.add("menuMobile");
+    };
+
+})
+;
