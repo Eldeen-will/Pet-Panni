@@ -568,7 +568,8 @@ footer p{
 
     #menu .activeM{
         background: #fff;
-        color: #CF6C01;
+        color: #ff8706;
+        text-decoration: underline;
     }
 
     #menu button{
@@ -577,7 +578,7 @@ footer p{
 
     #menu button:hover{
         background: #fff;
-        color: #D76F00;
+        color: #ff8706;
     }
 
     nav #menu li{
