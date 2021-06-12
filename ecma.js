@@ -12,7 +12,7 @@ let bandaA = document.getElementById('ba');
 let mantaA = document.getElementById('ma');
 let traveA = document.getElementById('tr');
 
-let botoes = document.querySelectorAll('.button');
+let botoes = document.querySelectorAll('#menu button');
 
 botoes.forEach((botao) => {
     botao.addEventListener('click', function(e) {
