@@ -535,6 +535,11 @@ footer p{
         top: -100%;
     }
 
+    .activeM{
+        background: #fff;
+        color: #CF6C01;
+    }
+
     #menu button{
         padding: 20px 0;
     }
@@ -542,7 +547,6 @@ footer p{
     #menu button:hover{
         background: #fff;
         color: #D76F00;
-        width: 100%;
     }
 
     nav #menu li{
