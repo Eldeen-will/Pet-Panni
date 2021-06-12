@@ -604,6 +604,13 @@ footer p{
         z-index: 1;
     }
 
+    #logo{
+        position: fixed;
+        z-index: 1;
+        top: -8px;
+        left: 6px;
+    }
+
     #menu button{
         font-weight: 700;
     }
@@ -698,8 +705,8 @@ footer p{
     .sec1{
         margin-top: 45px;
     }
-
 }
+
 
 @media (max-width: 657px){
     #site{
@@ -711,11 +718,12 @@ footer p{
         padding: 10px 30px;
         font-size: 1em;
     }
-}
 
     .sec1{
         margin-top: 40px;
     }
+} 
+
 
 @media (max-width: 531px){
 
@@ -736,11 +744,12 @@ footer p{
     #us p{
         font-size: 1.2em;
     }
-}
 
     .sec1{
         margin-top: 30px;
     }
+}
+
 
 @media (max-width: 425px){
 
@@ -840,8 +849,8 @@ footer p{
     #copy{
         font-size: 0.7em;
     }
-
 }
+
 
 @media (max-width: 375px){
 
@@ -915,6 +924,7 @@ footer p{
     }
 }
 
+
 @media (max-width: 320px){
 
     #site{
@@ -927,4 +937,7 @@ footer p{
         font-size: 0.6em;
     }
 
+    .sec1{
+        margin-top: 10px;
+    }
 }

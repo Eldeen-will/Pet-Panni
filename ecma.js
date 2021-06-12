@@ -83,9 +83,10 @@ check.addEventListener('click', function() {
 
         /* Auto-scroll */
 
-function pageScroll() {
+/*function pageScroll() {
+    
     window.scrollBy(0,1);
     scrolldelay = setTimeout(pageScroll,30);
 }
 
-pageScroll();
+pageScroll();*/
