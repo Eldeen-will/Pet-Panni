@@ -1,3 +1,5 @@
+        /*  Menu change */
+
 let homeM = document.getElementById('home');
 let edreM = document.getElementById('edre');
 let tapeM = document.getElementById('tape');
@@ -65,6 +67,7 @@ botoes.forEach((botao) => {
 
 }); 
 
+        /* Menu mobile */
 
 let check = document.getElementById("check")
 
@@ -75,5 +78,12 @@ check.addEventListener('click', function() {
     menu.classList.add("menuMobile");
     };
 
-})
-;
+});
+
+
+        /* Auto-scroll */
+
+function pageScroll() {
+    window.scrollBy(0,4);
+    scrolldelay = setTimeout(pageScroll,10);
+}
