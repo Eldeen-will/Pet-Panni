@@ -18,6 +18,7 @@
     display: none;
 }
 
+
         /* Body */
 
 a, button, i{
@@ -492,6 +493,8 @@ footer p{
 }
 
 
+        /* Responsive */
+
 @media (max-width: 1184px){
 
     #site{
@@ -549,6 +552,8 @@ footer p{
     }
 
 }
+
+        /* Menu Mobile Ativo */
 
 @media (max-width: 858px){
 

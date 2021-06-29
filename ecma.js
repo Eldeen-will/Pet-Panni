@@ -77,5 +77,4 @@ check.addEventListener('click', function() {
     }else{
     menu.classList.add("menuMobile");
     };
-
 });
